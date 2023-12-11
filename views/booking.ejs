@@ -1,6 +1,6 @@
 <!--Name: Mackenzie Lubben-Ortiz
-    Assignment: Grooming Page Development
-    Date: 11/19/2023
+    Assignment: Appointment Page Development
+    Date: 11/11/2023
     -->
 
     <!DOCTYPE html>
@@ -24,11 +24,11 @@
       <body>
         <!-- First Section -->
         <div class="header-banner">
-            <img src="/pets-r-us/public/images/j-balla-photography-cMtiWjiAvq4-unsplash.jpg">
+            <img src="/pets-r-us/public/images/camylla-battani-AoqgGAqrLpU-unsplash.jpg">
     
         <nav class="navbar">
             <!-- LOGO -->
-            <div class="logo"></div>
+            <div class="logo">Pets-R-Us</div>
     
             <!-- NAVIGATION MENU -->
             <ul class="nav-links"></ul>
@@ -47,45 +47,59 @@
         </nav>
     </div>
     
-    <h3>Grooming</h3>
-      
+    <!--ABOUT US SECTION-->
+    <h3>Book Your Appointment</h3>
+        
     
-    <p style="border-width:3px; border-style:solid; border-color:darkgoldenrod; padding: 1em;">
-        At Pets-R-Us, we care deeply about your furry family member. We insist on the best quality of care in a low stress environment for your dog. They will receive full one-on-one attention. We never cage drip dry your pet. They are not exposed to other stressed, sick, or aggressive animals. They are groomed and soon back in the comfort of their home as compared to hours kenneled in a grooming salon. We also use high quality products and equipment to ensure safety and comfort.
+      <div class="container" id="appointment">
+        <h3></h3>
+        <form action="action_page.php">
+
+          <label for="customerId">CustomerId</label>
+          <input type="text" id="customerId" name="customerID">
+          <label for="fname">First Name:</label>
+          <input type="text" id="fname" name="firstname">
+          <br>
+          <br>
+          <label for="lname">Last Name:</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+          <br>
+          <br>
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" placeholder="Your email...">
+          <br>
+          <br>
+          <label for="services">Service:</label>
+          <select name="services" id="services">
+            <option value="grooming">Grooming</option>
+            <option value="training">Training</option>
+            <option value="boarding">Boarding</option>
     
-      </p>
-    <h3>Pricing</h3>
-    <div class="list">
-        <ul>
-            <li>Nail Trim: $15</li>
-            <li>Haircut: $50-150</li>
-            <li>Teeth Brushing: $10</li>
-            <li>All of the above: $250</li>
-        </ul>
-    </div>
-  
+          <input type="submit" value="Submit">
     
-      <br>
-    
-    <br>
-    <br>
-    <br>
-    
+        </form>
+      </div>
     
       <style>
     footer {
         text-align: center;
         padding: 3px;
-        background-color: darksalmon;
+        background-color: #deb79f;
         color: white;
-        position: absolute;
+        position: flex;
         bottom: 0;
         width: 100%;
         height: 2.5rem;
     
     }
-      </style>
     
+    
+      </style>
+      <br>
+      <br>
+    
+    
+    <!--FOOTER-->
     
       <footer class="footer">
         <p>110 Crabapple Dr. Chicago, IL</p>
